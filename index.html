@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rolling Dice</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="roll.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-font-awesome"></i>
+      </div>
+
+      <div class="menu">
+        <div class="menu-links">
+          <a class="head-link home-link">
+            <img src="img/house-solid.svg" alt="Home" />
+          </a>
+          <a>
+            <img class="profile" src="img/nat.png" alt="Nat Zz Picture">
+          </a>
+
+          <div class="dropdown__wrapper hide dropdown__wrapper--fade-in none">
+            <section class="dropdown__group">
+              <ul class="unList">
+                <div class="user-name">Natan Zerihun</div>
+                <div class="email">natanzerihun21@gmail.com</div>
+                <hr class="divider">
+              </ul>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- Pop-up overlay -->
+  <div id="overlay" class="overlay"></div>
+  <div id="overlay" class="overlay22"></div>
+  <!-- Pop-up container -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>You Win!</h2>
+      <p class="winner">Congratulations
+      <p class="win-message"></p> on your victory!</p>
+      <button id="closeBtn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="modal modDisplay">
+    <h1 class="modal__title">Dice Game Room</h1>
+
+    <div class="modal__actions">
+      <a class="modal__action">1P</a>
+      <a class="modal__action"> 2P</a>
+    </div>
+
+    <div class="modal-btn">
+      <button class="lle modal__action high robo" type="button">
+        <img src="img/robot-solid.svg" alt="roboPlay" />
+      </button>
+      <button class="modal__action high multi" type="button">
+        <img src="img/play-solid.svg" alt="play" />
+      </button>
+    </div>
+  </div>
+
+  <section class="main-section">
+    <div class="hashDiv">
+      <input id="leftSide" class="roll roll1" type="button" value="ROLL" />
+      <a class="user-solid">
+        <img src="img/user-solid.svg" title="User" />
+      </a>
+      <div class="common1 score1">
+        <p>0</p>
+      </div>
+    </div>
+    <div class="dice"></div>
+
+    <div class="hashDiv2">
+      <input id="rightSide" class="roll roll2" type="submit" value="ROLL" />
+      <a class="user-solid1">
+        <img id="rr2" src="img/user-solid1.svg" title="User" />
+      </a>
+      <div id="dre" class="common1 score2">
+        <p>0</p>
+      </div>
+    </div>
+    <button class="btnn1">Play Again</button>
+  </section>
+
+  <footer class="footer">
+    <section class="footer-top-wrapper">
+      <span class="social-links">
+        <a href="github.com">
+          <img src="img/github.svg" title="GitHub" alt="GitHub" />
+        </a>
+        <a href="instagram.com">
+          <img src="img/instagram.svg" title="Instagram" alt="Instagram" />
+        </a>
+        <a href="facebook.com">
+          <img src="img/facebook.svg" title="Facebook" alt="Facebook" />
+        </a>
+        <a href="telegram.com">
+          <img src="img/telegram.svg" title="Telegram" alt="Telegram" />
+        </a>
+        <a href="youtube.com">
+          <img src="img/youtube.svg" title="YouTube" alt="YouTube" />
+        </a>
+      </span>
+    </section>
+
+    <section class="foot_small">
+      <small>© NatNav 2023 All rights reserved</small>
+    </section>
+  </footer>
+</body>
+
+</html>
